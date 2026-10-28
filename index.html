@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>韩国 SOOP / PandaTV 舞蹈主播中英韩 ID 对照百科</title>
+  <meta name="description" content="韩国舞蹈主播中文名、韩文名与直播 ID 对照名册，覆盖 SOOP、PandaTV 与 Twitch。每条链接指向看看爱看的（kkakd.com）合集页。本站不托管视频。">
+  <link rel="canonical" href="https://shu-0110.github.io/korean-bj-dance-roster/">
+  <meta property="og:title" content="韩国 SOOP / PandaTV 舞蹈主播中英韩 ID 对照百科">
+  <meta property="og:description" content="中文名、韩文名与直播 ID 对照名册。链接指向看看爱看的（kkakd.com）合集页，本站不托管视频。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shu-0110.github.io/korean-bj-dance-roster/">
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --paper: #fffdf9;
+      --ink: #221c18;
+      --muted: #5e564e;
+      --line: #e4d8c8;
+      --accent: #8a3428;
+      --chip: #efe6da;
+      --chip-ink: #221c18;
+      --soop: #146656;
+      --panda: #8a4b08;
+      --twitch: #5a348f;
+      --shadow: 0 1px 0 rgba(34, 28, 24, 0.04);
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161311;
+        --paper: #221e1a;
+        --ink: #f4efe7;
+        --muted: #c9bbaa;
+        --line: #3c342c;
+        --accent: #f0b7a8;
+        --chip: #2e2823;
+        --chip-ink: #f4efe7;
+        --soop: #8fd0c0;
+        --panda: #f0c27a;
+        --twitch: #d7c4f5;
+        --shadow: none;
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Noto Sans CJK SC", "Source Han Sans SC", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 1.5rem 1.15rem 3rem; }
+    header { margin-bottom: 1.25rem; }
+    .kicker {
+      margin: 0 0 0.35rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", "Noto Serif SC", "Source Han Serif SC", serif;
+      font-size: clamp(1.55rem, 2.5vw, 2.15rem);
+      font-weight: 650;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    .lead { margin: 0 0 0.55rem; max-width: 68ch; }
+    .lead.en { color: var(--muted); font-size: 0.95rem; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: end;
+      margin: 1rem 0 0.75rem;
+    }
+    .search { flex: 1 1 16rem; min-width: 14rem; }
+    label span, .sort span, .filters span {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    input[type="search"], select {
+      width: 100%;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+    }
+    .filters { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+    .filters button, .text-btn, th button {
+      font: inherit;
+      cursor: pointer;
+    }
+    .filters button, .text-btn {
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--chip-ink);
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+    }
+    .filters button[aria-pressed="true"] {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+    .text-btn { border-radius: 4px; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      align-items: baseline;
+      justify-content: space-between;
+      margin: 0 0 0.6rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .table-wrap {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; }
+    .alias, .archive { overflow-wrap: anywhere; }
+    caption { text-align: left; }
+    th, td {
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      vertical-align: middle;
+      border-bottom: 1px solid var(--line);
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: var(--paper);
+      z-index: 1;
+      white-space: nowrap;
+    }
+    th button {
+      background: none;
+      border: 0;
+      padding: 0;
+      color: inherit;
+      font-weight: 650;
+    }
+    th[aria-sort="ascending"] button::after { content: " ↑"; }
+    th[aria-sort="descending"] button::after { content: " ↓"; }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:hover td { background: color-mix(in srgb, var(--accent) 8%, var(--paper)); }
+    .alias {
+      font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, Consolas, monospace;
+      font-size: 0.92rem;
+    }
+    .plat { font-weight: 650; }
+    .plat-SOOP { color: var(--soop); }
+    .plat-PandaTV { color: var(--panda); }
+    .plat-Twitch { color: var(--twitch); }
+    .archive { font-weight: 600; text-underline-offset: 0.16em; }
+    #empty, #error {
+      margin: 0.8rem 0 0;
+      padding: 0.9rem 1rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 1.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    footer p { margin: 0.35rem 0; max-width: 75ch; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    @media (max-width: 880px) {
+      .table-wrap { overflow: visible; background: transparent; border: 0; box-shadow: none; }
+      table { min-width: 0; }
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      tbody tr {
+        display: block;
+        margin: 0 0 0.75rem;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      tbody td {
+        display: grid;
+        grid-template-columns: 5.6rem 1fr;
+        gap: 0.25rem 0.75rem;
+        align-items: baseline;
+      }
+      tbody td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Dance roster · ZH / KO / ID</p>
+      <h1>韩国 SOOP / PandaTV 舞蹈主播中英韩 ID 对照百科</h1>
+      <p class="lead">这是一份韩国舞蹈主播的对照名册，用来按中文名、韩文名或直播 ID 查到同一个人。平台包括 SOOP、PandaTV 与 Twitch。本页只放文字和链接，不托管、不播放录像。每一行都链到看看爱看的（kkakd.com）上该主播的舞蹈合集。</p>
+      <p class="lead en" lang="en">An ID cross-reference for Korean dance streamers on SOOP, PandaTV, and Twitch. Search by Chinese name, Hangul name, or broadcast ID. This page does not host video. Each row links to that streamer’s archive on kkakd.com.</p>
+    </header>
+
+    <main>
+      <form class="toolbar" role="search" onsubmit="return false">
+        <label class="search">
+          <span>搜索</span>
+          <input id="q" type="search" placeholder="中文名、韩文名、ID 或平台" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        </label>
+        <div>
+          <span id="platform-label">平台</span>
+          <div class="filters" role="group" aria-labelledby="platform-label">
+            <button type="button" data-platform="all" aria-pressed="true">全部</button>
+            <button type="button" data-platform="SOOP" aria-pressed="false">SOOP</button>
+            <button type="button" data-platform="PandaTV" aria-pressed="false">PandaTV</button>
+            <button type="button" data-platform="Twitch" aria-pressed="false">Twitch</button>
+          </div>
+        </div>
+        <label class="sort">
+          <span>排序</span>
+          <select id="sort">
+            <option value="chinese_name">中文名</option>
+            <option value="korean_name">韩文名</option>
+            <option value="alias">ID / 别名</option>
+            <option value="platform">平台</option>
+            <option value="latest_date">最近日期</option>
+            <option value="link">合集标题</option>
+          </select>
+        </label>
+        <button type="button" class="text-btn" id="dir" aria-pressed="false">升序</button>
+        <button type="button" class="text-btn" id="reset">重置</button>
+      </form>
+
+      <div class="meta">
+        <p id="count" aria-live="polite">正在载入名册…</p>
+        <p>只收录舞蹈（韩舞）。短视频与写真未列入。</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">韩国舞蹈主播中文名、韩文名、直播 ID、平台，以及看看爱看的合集链接</caption>
+          <thead>
+            <tr>
+              <th scope="col" aria-sort="ascending"><button type="button" data-sort="chinese_name">中文名</button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="korean_name">韩文名</button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="alias">ID / 别名</button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="platform">平台</button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="latest_date" title="来源页面记录的最近日期">最近日期</button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="link">官网合集</button></th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p id="empty" hidden>没有匹配的主播。换一个名字、ID 或平台试试。</p>
+      <p id="error" hidden></p>
+    </main>
+
+    <footer>
+      <p>数据快照日期：2026-10-28。来源站点：<a href="https://www.kkakd.com" target="_blank" rel="noopener">看看爱看的 https://www.kkakd.com</a>。</p>
+      <p>本仓库是参考名册，条目链接指向 kkakd.com 上对应的舞蹈合集页。代码与名册：<a href="https://github.com/shu-0110/korean-bj-dance-roster">github.com/shu-0110/korean-bj-dance-roster</a>。</p>
+    </footer>
+  </div>
+  <noscript>
+    <p>需要启用 JavaScript 才能搜索这张表。名册数据在 <code>data/roster.json</code>。</p>
+  </noscript>
+  <script>
+    (function () {
+      var PLATFORMS = ["all", "SOOP", "PandaTV", "Twitch"];
+      var SORT_KEYS = ["chinese_name", "korean_name", "alias", "platform", "latest_date", "link"];
+      var state = {
+        rows: [],
+        q: "",
+        platform: "all",
+        sortKey: "chinese_name",
+        sortDir: 1
+      };
+
+      var qInput = document.getElementById("q");
+      var sortSelect = document.getElementById("sort");
+      var dirBtn = document.getElementById("dir");
+      var countEl = document.getElementById("count");
+      var emptyEl = document.getElementById("empty");
+      var errorEl = document.getElementById("error");
+      var tbody = document.getElementById("rows");
+      var platformButtons = Array.prototype.slice.call(document.querySelectorAll("[data-platform]"));
+
+      function norm(value) {
+        return String(value || "").toLowerCase().replace(/\s+/g, " ").trim();
+      }
+
+      function aliasesOf(row) {
+        var list = row.english_aliases || [];
+        return Array.isArray(list) ? list.filter(Boolean) : [String(list)];
+      }
+
+      function sortValue(row, key) {
+        if (key === "alias") return aliasesOf(row).join(" ");
+        if (key === "link") return row.site_title || "";
+        return row[key] || "";
+      }
+
+      function haystack(row) {
+        return norm([
+          row.chinese_name,
+          row.korean_name,
+          aliasesOf(row).join(" "),
+          row.platform,
+          row.site_title
+        ].join(" "));
+      }
+
+      function hasHangul(value) {
+        return /[\uac00-\ud7af]/.test(value || "");
+      }
+
+      function displayTitle(row) {
+        return String(row.site_title || aliasesOf(row)[0] || row.chinese_name || "合集").replace(/\s+/g, " ").trim();
+      }
+
+      function readUrl() {
+        var params = new URLSearchParams(location.search);
+        state.q = params.get("q") || "";
+        var platform = params.get("platform") || "all";
+        state.platform = PLATFORMS.indexOf(platform) >= 0 ? platform : "all";
+        var sort = params.get("sort") || "chinese_name";
+        state.sortKey = SORT_KEYS.indexOf(sort) >= 0 ? sort : "chinese_name";
+        state.sortDir = params.get("dir") === "desc" ? -1 : 1;
+        qInput.value = state.q;
+        sortSelect.value = state.sortKey;
+        paintPlatform();
+        paintDir();
+      }
+
+      function writeUrl() {
+        var url = new URL(location.href);
+        if (state.q) url.searchParams.set("q", state.q);
+        else url.searchParams.delete("q");
+        if (state.platform !== "all") url.searchParams.set("platform", state.platform);
+        else url.searchParams.delete("platform");
+        if (state.sortKey !== "chinese_name") url.searchParams.set("sort", state.sortKey);
+        else url.searchParams.delete("sort");
+        if (state.sortDir < 0) url.searchParams.set("dir", "desc");
+        else url.searchParams.delete("dir");
+        history.replaceState(null, "", url);
+      }
+
+      function paintPlatform() {
+        platformButtons.forEach(function (button) {
+          button.setAttribute("aria-pressed", button.getAttribute("data-platform") === state.platform ? "true" : "false");
+        });
+      }
+
+      function paintDir() {
+        dirBtn.textContent = state.sortDir > 0 ? "升序" : "降序";
+        dirBtn.setAttribute("aria-pressed", state.sortDir < 0 ? "true" : "false");
+      }
+
+      function paintSortHeaders() {
+        document.querySelectorAll("th[aria-sort]").forEach(function (th) {
+          var key = th.querySelector("[data-sort]").getAttribute("data-sort");
+          th.setAttribute("aria-sort", key === state.sortKey ? (state.sortDir > 0 ? "ascending" : "descending") : "none");
+        });
+      }
+
+      function cell(label, text, extra) {
+        var td = document.createElement("td");
+        td.setAttribute("data-label", label);
+        if (extra && extra.lang) td.lang = extra.lang;
+        if (extra && extra.className) td.className = extra.className;
+        td.textContent = text;
+        return td;
+      }
+
+      function render(list) {
+        var frag = document.createDocumentFragment();
+        list.forEach(function (row) {
+          var tr = document.createElement("tr");
+          var zh = cell("中文名", row.chinese_name || "", { lang: "zh-Hans" });
+          var koText = row.korean_name || "";
+          var ko = cell("韩文名", koText, hasHangul(koText) ? { lang: "ko" } : { lang: "zh-Hans" });
+          var id = cell("ID / 别名", aliasesOf(row).join(" · "), { className: "alias" });
+          id.lang = "en";
+          var plat = cell("平台", row.platform || "");
+          var known = { SOOP: "plat-SOOP", PandaTV: "plat-PandaTV", Twitch: "plat-Twitch" };
+          plat.className = "plat " + (known[row.platform] || "");
+
+          var date = cell("最近日期", row.latest_date || "");
+
+          var linkTd = document.createElement("td");
+          linkTd.setAttribute("data-label", "官网合集");
+          var href = row.site_url || "";
+          var ok = false;
+          try {
+            var parsed = new URL(href);
+            ok = parsed.protocol === "https:" || parsed.protocol === "http:";
+          } catch (err) {
+            ok = false;
+          }
+          if (ok) {
+            var a = document.createElement("a");
+            a.href = href;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.className = "archive";
+            a.textContent = displayTitle(row);
+            linkTd.appendChild(a);
+          } else {
+            linkTd.textContent = displayTitle(row);
+          }
+
+          tr.append(zh, ko, id, plat, date, linkTd);
+          frag.appendChild(tr);
+        });
+        tbody.replaceChildren(frag);
+      }
+
+      function apply() {
+        var q = norm(state.q);
+        var list = state.rows.filter(function (row) {
+          if (state.platform !== "all" && row.platform !== state.platform) return false;
+          if (!q) return true;
+          return haystack(row).indexOf(q) >= 0;
+        });
+        list.sort(function (a, b) {
+          var primary = norm(sortValue(a, state.sortKey)).localeCompare(
+            norm(sortValue(b, state.sortKey)),
+            "zh-Hans",
+            { numeric: true, sensitivity: "base" }
+          );
+          if (primary !== 0) return primary * state.sortDir;
+          return norm(a.chinese_name).localeCompare(norm(b.chinese_name), "zh-Hans", { sensitivity: "base" });
+        });
+        render(list);
+        paintSortHeaders();
+        var total = state.rows.length;
+        countEl.textContent = list.length === total
+          ? total + " 位舞蹈主播"
+          : "显示 " + list.length + " / " + total;
+        emptyEl.hidden = list.length !== 0;
+      }
+
+      qInput.addEventListener("input", function () {
+        state.q = qInput.value;
+        writeUrl();
+        apply();
+      });
+
+      platformButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          state.platform = button.getAttribute("data-platform");
+          paintPlatform();
+          writeUrl();
+          apply();
+        });
+      });
+
+      sortSelect.addEventListener("change", function () {
+        state.sortKey = sortSelect.value;
+        writeUrl();
+        apply();
+      });
+
+      dirBtn.addEventListener("click", function () {
+        state.sortDir = state.sortDir > 0 ? -1 : 1;
+        paintDir();
+        writeUrl();
+        apply();
+      });
+
+      document.querySelectorAll("th [data-sort]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var key = button.getAttribute("data-sort");
+          if (state.sortKey === key) state.sortDir = state.sortDir > 0 ? -1 : 1;
+          else {
+            state.sortKey = key;
+            state.sortDir = 1;
+          }
+          sortSelect.value = state.sortKey;
+          paintDir();
+          writeUrl();
+          apply();
+        });
+      });
+
+      document.getElementById("reset").addEventListener("click", function () {
+        state.q = "";
+        state.platform = "all";
+        state.sortKey = "chinese_name";
+        state.sortDir = 1;
+        qInput.value = "";
+        sortSelect.value = state.sortKey;
+        paintPlatform();
+        paintDir();
+        writeUrl();
+        apply();
+        qInput.focus();
+      });
+
+      readUrl();
+
+      fetch("data/roster.json", { cache: "no-cache" })
+        .then(function (res) {
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          return res.json();
+        })
+        .then(function (data) {
+          if (!Array.isArray(data)) throw new Error("名册格式不正确");
+          state.rows = data.filter(function (row) {
+            return row && row.source === "streamers" && row.category === "dance";
+          });
+          apply();
+        })
+        .catch(function () {
+          countEl.textContent = "名册没有载入";
+          errorEl.hidden = false;
+          errorEl.textContent = "无法读取 data/roster.json。请通过网站地址打开本页，或在仓库根目录启动静态服务器后再访问。";
+        });
+    })();
+  </script>
+</body>
+</html>
